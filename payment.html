@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Payment Gateway Example</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="payment-form">
+		<h1>Payment Gateway</h1>
+		<form action="process_payment.php" method="post">
+			<label for="card-number">Card Number</label>
+			<input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456">
+
+			<label for="card-expiry">Expiry Date</label>
+			<input type="text" id="card-expiry" name="card-expiry" placeholder="MM/YY">
+
+			<label for="card-cvc">CVC</label>
+			<input type="text" id="card-cvc" name="card-cvc" placeholder="123">
+
+			<label for="amount">Amount</label>
+			<input type="text" id="amount" name="amount" placeholder="10.00">
+
+			<button type="submit">Pay Now</button>
+		</form>
+	</div>
+</body>
+</html>
